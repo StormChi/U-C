@@ -47,3 +47,12 @@ For which positive integers n does n % 2 produce 1?____________
 | abs(-5.2)
 |
 | pow(2, 3)                |                  |               |
+
+2.Built-in Function: `help`
+
+| Question                                                              |   Answer   |
+|:-                                                                   :-|           
+| What type of value does function `ord` return?
+| How many arguments does function `oct` take?       
+| What is the *minimum* number of arguments function `round` can take?  |
+| What is the *maximum* number of arguments function `round` can take?  |            |
