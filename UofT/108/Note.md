@@ -20,11 +20,13 @@ values that the expressions produce and the types of those values.
 |10 % 3            |               |                |
 
 2.Arithmetic Operators 
+
 For which positive integers n does n % 2 produce 0?____________
 
 For which positive integers n does n % 2 produce 1?____________
 
 3.Order of Precedence of Arithmetic Operators 
+
 | Python Expression   | Python Expression Parenthesized |
 |-----------------    | --------------------------------|
 | -2 + 4 * 7          | ((-2) + (4 * 7))                |
@@ -35,6 +37,7 @@ For which positive integers n does n % 2 produce 1?____________
 
 ## Build-in Functions 
 1.Built-in Functions 
+
 | Python Expression        |   Result         | Type of Result|
 |--------------------------| -----------------| --------------|
 | min(4, 6, 2.5)           |                  |               |
