@@ -77,6 +77,7 @@ y = x + 2
 x = y + 1
 ```
 After the code above is executed, to which value does x refer?__________
+
 After the code above is executed, to which value does y refer?__________ 
 
 2.Swapping variable values An extra exercise to try at home.
@@ -85,7 +86,50 @@ Assume that variables a and b have been assigned int values. Write code to swap 
 b refer to: after your statements are executed, a should refer to the value that b used to refer to, and b
 should refer to the value that a used to refer to. Hint: use a third variable.
 
-
+____________
 
 Once you have written the code, trace your code using the memory model to confirm that it correctly
 swaps the values:
+____________ 
+
+## Function Definitions 
+
+1.Function Definitions 
+
+(a) Function `double` takes a number and returns twice its value.
+
+What value does double(7) produce?__________
+
+What value does double(5.7) produce?__________
+
+Write a return statement to complete the function definition:
+
+```python 
+def double(num):
+```
+
+(b) Function `our maximum` takes two numbers and returns the larger of the two.
+
+What value does our maximum(4, 3.7) produce?__________
+
+Complete the function definition:
+
+```python
+def our_maximum(num1, num2):
+```
+
+(c) Function `max_of_min` takes four numbers, `num1`, `num2`, `value1`, and `value2`, determines the minimum
+
+    of `num1` and `num2` and the minimum of `value1` and `value2`, and returns the maximum of those two
+
+    minimums.
+    
+What value does max of min(4, 3.7, 6, 3.5) produce?__________
+
+What value does max of min(1, 1.7, 4.5, 3) produce?__________
+
+Complete the function definition. If you like, you can use several statements.
+
+```python 
+def max_of_min(num1, num2, value1, value2)
+```
