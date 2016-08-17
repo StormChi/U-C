@@ -1,0 +1,103 @@
+<html> 
+<head>
+    <title>WDD | Hands-on 2</title>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="container">
+		<a href="../../index.html">
+			<div id="header-back"><img id="header-img" src="assets/images/home.svg">
+			</div>
+		</a>
+		<div id="header">
+			<div id="header-caption">
+				<div id="header-caption-logo"><img class="img-scaled" src="assets/images/logo.png" /></div>
+				<div id="header-caption-name">Web Design DeCal</div>
+				<div class="clear"></div>
+			</div>
+			<div id="header-content">
+				<!-- ASSIGNMENT NAME -->
+				<div id="header-title">Hands-on 2</div>
+				<!-- DUE DATE -->
+				<div id="header-due">February 18th</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="info">
+				<!-- ASSIGNMENT TITLE -->
+				<div class="info-title">CSS Box Model</div>
+				<div class="info-content">
+					<!-- REQUIRED TOOLS -->
+					<div class="info-required">Required Tools: Google Chrome and a text editor</div>
+					<!-- INTRODUCTION -->
+					<div class="info-intro">Today, we'll be learning how to place, position, and space HTML elements. We'll explore different CSS styles, such as margin, padding, border, and position. You'll create a photo gallery similar to Instagram, but better: KanyeGram.</div>
+				</div>
+			</div>
+			<div class="body">
+				<div class="body-header">Assignment</div>
+				<!-- CONTENT -->
+				
+				<!-- Styled Tags; P, UL, LI, .caption, A, IMG-->
+				<!-- Add P Tags for each paragraph -->
+				<!-- Use UL LI Tags for each lists -->
+				<!-- Use P Tags with "caption" class for paragraph captions (60% opacity) -->
+				<!-- Use IMG Tags for assets/images -->
+				<p>At the end of this hands-on, you should have something like the page below.</p>
+				<img src="assets/images/finish.jpg">
+				
+				<div class = "body-header"><br>Step 1: Make it Pretty</div>
+				<br>
+				<img src="assets/images/starter.jpg">
+				<p>Open "index.html" from the downloaded folder in your browser to see what we have to work with.</p>
+				<p>KanyeGram looks a bit ugly now - but don't worry! With a bit of CSS, we can easily make it pretty.  From the downloaded folder, open up style.css!</p>
+				<p>Give your entire website a font facelift by adding a font-family to "body" in your CSS. Additionally, let's style .container accordingly:</p>
+				.container {
+				<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background: #eee;
+				<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;
+				<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: 700px;
+				<br>}
+
+				<p>Refresh the page and you'll see a gray box with the title centered. The photo is still too big, so let's fix that. We can select all <b>&lt;img&gt;</b> tags and style:</p>
+				img {
+				<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height: 200px;
+				<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: 200px;
+				<br>}
+
+				<p>Oh no - The images are distorted! That's because you're manually setting the width <em>and</em> the height of the image. The image will be resized to fit your dimensions, causing it to warp. Usually, you'll only want to set either the height <em>or</em> the width - not both. But in this case, we want our images to be square. How can we fix that? <b>Use this nifty style: object-fit: cover</b></p>
+				img {
+				<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height: 200px;
+				<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: 200px;
+				<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>object-fit: cover;</b>
+				<br>}
+
+				<p>You can read more about this nifty trick <a href="https://medium.com/@chrisnager/center-and-crop-images-with-a-single-line-of-css-ad140d5b4a87">here</a>. Basically, object-fit: cover centers the photo within the 200 by 200px square, and <em>automatically crops</em> any part of the image that falls outside of the square - without distortion.</p> 
+				<p>At this point, you should have something like this:</p>
+				<br>
+				<img src="assets/images/1.jpg">
+
+				<div class = "body-header"><br>Step 2: Positioning and Spacing</div>
+				<p>At this point, feel free to change the images to something else (sorry, Kanye). Note that these images are <b>&lt;div&gt;</b> tags, so they stack <em>vertically</em>.</p>
+				<p>Fix this by adding <b>display: inline-block</b> to <b>.image-container</b>. The images are pretty close together, so let's give them some margin. Add <b>margin: 10px</b> to <b>.image-container</b>. This adds a 10px margin to every side of each <b>&lt;div&gt;</b> with the tag .image-container. Finally, add <b>border: 5px solid white</b>.</p>
+				<p>Notice that the edge of the gray box is very close to the text and images. Instead of fiddling with the width and possibly messing up the layout, let's just use <b>padding</b> to "push" the edge of the box out. Add <b>padding: 30px</b> to <b>.container</b>. This adds 30px of space along the inner edge of your gray .container.</p>
+				<p>Now, you should have something like this.</p>
+				<img src="assets/images/2.jpg">
+
+				<div class = "body-header"><br>Step 3: Final Touches</div>
+				<p>Your website looks pretty nice! (I hope). However, the content isn't centered. To fix that, add <b>margin: auto</b> to <b>.container</b>. Now you see why we put everything inside <b>.container</b> - it makes it easy to move all the elements, including centering them!</p>
+				<p>Finally, let's make the button pretty. Add the following styling to <b>.button</b>:</p>
+				.button {
+				<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background: #517fa4;
+				<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: white;
+				<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin: 20px auto;
+				<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding: 10px 15px;
+				<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: 200px;
+				<br>}
+				<p>Play around in web inspector to see what each one of these styles do, and try making your own button.</p>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>

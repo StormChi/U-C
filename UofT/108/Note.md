@@ -106,9 +106,10 @@ Write a return statement to complete the function definition:
 
 ```python 
 def double(num):
+    return num * 2
 ```
 
-(b) Function `our maximum` takes two numbers and returns the larger of the two.
+(b) Function `our_maximum` takes two numbers and returns the larger of the two.
 
 What value does our maximum(4, 3.7) produce?__________
 
@@ -116,6 +117,7 @@ Complete the function definition:
 
 ```python
 def our_maximum(num1, num2):
+    return max(num1, num2)
 ```
 
 (c) Function `max_of_min` takes four numbers, `num1`, `num2`, `value1`, and `value2`, determines the minimum
@@ -123,7 +125,7 @@ def our_maximum(num1, num2):
     of `num1` and `num2` and the minimum of `value1` and `value2`, and returns the maximum of those two
 
     minimums.
-    
+
 What value does max of min(4, 3.7, 6, 3.5) produce?__________
 
 What value does max of min(1, 1.7, 4.5, 3) produce?__________
@@ -131,5 +133,37 @@ What value does max of min(1, 1.7, 4.5, 3) produce?__________
 Complete the function definition. If you like, you can use several statements.
 
 ```python 
-def max_of_min(num1, num2, value1, value2)
+def max_of_min(num1, num2, value1, value2):
+    return max(min(num1, num2), min(value1, value2))
 ```
+
+## Function design Recipe
+
+1.Function Design Recipe
+
+Following the Function Design Recipe, write a function that satisfies this description:
+
+This function returns a string containing a given word repeated a given number of times. For example,
+
+someone should be able to call the function to repeat "Marcia " three times and the function should
+
+return "Marcia Marcia Marcia ", or call the function to repeat "Buffalo " eight times and have it
+
+return "Buffalo Buffalo Buffalo Buffalo Buffalo Buffalo Buffalo Buffalo ".
+
+**Examples** 
+
+
+**Type Contract**
+
+
+**Header**
+
+
+**Description**
+
+
+**Code the Body**
+
+
+**Test**
