@@ -22,7 +22,7 @@ end
 # return 0 if it doesn't contain any numbers. For example, product([1, 2, 3])
 # should return 6.
 def product(elements)
-#   elements.each do |num|
+
 end
 
 # 3. In the uniq method, you will return an array of distinct elements from the
